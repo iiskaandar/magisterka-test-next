@@ -4,7 +4,7 @@ import { useState } from 'react';
 interface AddTodoProps {
   addTodo: (text: string) => void;
 }
-
+const APIToken = "16721562521414chsdjghgsdghdsgh782727217"
 const AddTodo = ({ addTodo }: AddTodoProps) => {
   const [text, setText] = useState('');
 
@@ -13,6 +13,7 @@ const AddTodo = ({ addTodo }: AddTodoProps) => {
     if (text.trim()) {
       addTodo(text);
       setText('');
+      console.log(APIToken)
     }
   };
 
