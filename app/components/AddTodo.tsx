@@ -13,7 +13,8 @@ const AddTodo = ({ addTodo }: AddTodoProps) => {
     if (text.trim()) {
       addTodo(text);
       setText('');
-      console.log(APIToken)
+      const host = (APIToken).replace(/\/+$/, '');
+      console.log(host)
     }
   };
 
