@@ -1,0 +1,1 @@
+# magisterka-test-next
